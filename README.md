@@ -68,6 +68,19 @@ const allChains = chains.all()
 // { 1: { name: "Ethereum Mainnet", ..., "infoURL": "https://ethereum.org" }, 2: {...}}
 ```
 
+### Get all Icons:
+
+```ts
+const allChains = chains.allIcons()
+// { "5ireChain": { data: [...], imgUrls: ["https://ipfs.io/ipfs/QmaZDNDFLWESH4i3XqwEWfWBb1HPnQSNbDAr74nr2x8QAk"] }, "ETND": {...}}
+```
+
+### Chain Icon by Name:
+
+```ts
+chains.getIconByName("ethereum") // { data: [...], imgUrls: ["https://ipfs.io/ipfs/QmdwQDr6vmBtXmK2TmknkEuZNoaDqTasFdZdu3DRw8b2wt"] }
+```
+
 ### Typescript Types:
 
 ```ts

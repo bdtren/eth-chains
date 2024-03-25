@@ -1,6 +1,6 @@
 {
   "name": "@bdtren/eth-chains",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Helper module for getting Ethereum chains info.",
   "author": "BDtren",
   "main": "dist/index.js",
