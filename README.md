@@ -1,4 +1,4 @@
-[![Publish](https://github.com/taylorjdawson/eth-chains/actions/workflows/publish-release.yml/badge.svg)](https://github.com/taylorjdawson/eth-chains/actions/workflows/publish-release.yml/badge.svg) ![npm](https://img.shields.io/npm/v/eth-chains?logoColor=blue)
+[![Publish](https://github.com/bdtren/eth-chains/actions/workflows/publish-release.yml/badge.svg)](https://github.com/bdtren/eth-chains/actions/workflows/publish-release.yml/badge.svg) ![npm](https://img.shields.io/npm/v/eth-chains?logoColor=blue)
 
 # Eth Chains
 
@@ -7,29 +7,29 @@ Helper module for getting Ethereum chains info from [chainid.network](https://ch
 ## Install
 
 ```
-yarn add eth-chains
+yarn add @bdtren/eth-chains
 ```
 
 ```
-npm install eth-chains
+npm install @bdtren/eth-chains
 ```
 
 ### Note on versioning
 
-`eth-chains` uses a weekly automated release script that updates its chain data. This release script takes breaking changes into account, so breaking changes (e.g. renamed chains) are released as a new major version, while non-breaking changes (e.g. new chains) are released as a new minor version.
+`@bdtren/eth-chains` uses a weekly automated release script that updates its chain data. This release script takes breaking changes into account, so breaking changes (e.g. renamed chains) are released as a new major version, while non-breaking changes (e.g. new chains) are released as a new minor version.
 
 ## Usage
 
 Import `chains` methods and enums:
 
 ```ts
-import chains, { ChainId, ChainName } from 'eth-chains'
+import chains, { ChainId, ChainName } from '@bdtren/eth-chains'
 ```
 
 ### Easily get most popular chains:
 
 ```ts
-import { chain } from 'eth-chains'
+import { chain } from '@bdtren/eth-chains'
 
 console.log(chain.ethereum.rinkeby)
 
@@ -71,7 +71,7 @@ const allChains = chains.all()
 ### Typescript Types:
 
 ```ts
-import { Chain, NativeCurrency, Explorer } from 'eth-chains'
+import { Chain, NativeCurrency, Explorer } from '@bdtren/eth-chains'
 const ethereum: Chain = chains.getById(ChainId.EthereumMainnet)
 ethereum.chain // 'ETH'
 ```
